@@ -6,6 +6,21 @@
   --desktop-panel-max-height: 600px;
 }
 
+/* DEV ENV IDENTIFIER */
+body::before {
+  content: "DEV ENV - BRANCH: dev";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: red;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  z-index: 9999;
+  padding: 5px;
+}
+
 /* header and nav layout */
 header .nav-wrapper {
   background-color: var(--background-color);
